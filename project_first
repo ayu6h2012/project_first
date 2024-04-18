@@ -1,0 +1,27 @@
+import random
+user_choice = input("Enter your choice [Rock/Paper/Scissor] = ")
+computer_choice = random.choice(["Rock", "Paper", "Scissor"])
+
+if user_choice == computer_choice:
+    print("Match Tied!")
+
+elif user_choice == "Rock":
+    if computer_choice == "Paper":
+        print("Computer wons, Paper cover rock")
+    else:
+        print("You won, Rock smashes scissor")
+
+elif user_choice == "Paper":
+    if computer_choice == "Rock":
+        print("You won, Paper covers rock")
+    else:
+        print("Computer won, Scissor cuts paper")
+
+elif user_choice == "Scissor":
+    if computer_choice == "Rock":
+        print("Computer won, Rock smashes scissor")
+    else:
+        print("You won, scissor cuts paper")
+
+else:
+    print("Enter valid input")  
